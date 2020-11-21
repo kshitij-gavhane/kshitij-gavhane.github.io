@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #2980b9;
+}
+
+.loading {
+  display: flex;
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+
+  span {
+    padding: 0 20px;
+    line-height: 100px;
+    background: #34495e;
+    animation: bulge 2s infinite;
+  }
+}
+
+@keyframes bulge {
+  50% {
+    box-shadow: 0 20px 0 #eee;
+    transform: translateY(-35px);
+  }
+}
